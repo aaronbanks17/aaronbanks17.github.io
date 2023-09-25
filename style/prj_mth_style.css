@@ -59,7 +59,7 @@ nav ul li a:hover::after{
     font-style: italic;
 }
 .page-descr{
-    padding: 20px 5%;
+    padding: 15px 7%;
     color: black;
     font-size: 15;
     font-weight: 500;
