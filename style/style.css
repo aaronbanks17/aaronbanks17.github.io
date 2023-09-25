@@ -416,6 +416,10 @@ nav .fa-solid{
     .contact-links a .ai{
         font-size: 30px;
     }
+    .layer h3{
+        font-size: 14px;
+    }
+    
 }
 
 /* ----- css for large screens ------ */
