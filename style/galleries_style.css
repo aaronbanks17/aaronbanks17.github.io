@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #ebddc1;
+    color:  #26712a;
+}
+#header{
+    position: relative;
+}
+.container{
+    padding: 20px 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    margin-right: 3%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 22px;
+}
+
+nav ul li a{
+    color: #26712a;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #194a1b;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.header-text h1{
+    font-size: 50px;
+    margin: 15px;
+}
+.page-descr{
+    padding: 20px 10%;
+    color: black;
+    font-size: 15;
+}
+.page-descr span{
+    font-style: italic;
+}
+.page-descr a{
+    color: black;
+}
+/* ----- Portfolio ------ */
+#portolio{
+    padding: 5px 0;
+}
+#portfolio .container {
+    /* max-width: 1500px;  */
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.work-list{
+    padding: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    border: 4px solid #d3c7ae;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(#d3c7ae, rgba(241, 227, 198, 0.65));
+    /*background: linear-gradient(rgba(211, 199, 174, 0.9), rgba(241, 227, 198, 0.65));*/
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #26712a;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #26712a;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    background: #d3c7ae;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+/* ----- css for small screens ------ */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    /*#header{
+        background-image: url(images/background.pdf);
+    }*/
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #d3c7ae;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-links a{
+        font-size: 30px;
+    }
+    .contact-links a .ai{
+        font-size: 30px;
+    }
+}
+
+/* ----- css for large screens ------ */
+
+@media screen and (min-width: 1200px) {
+    .slideshow-container {
+        max-width: 1200px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; 
+    }
+    
+    .swiper-slide {
+        max-width: 100%; 
+        text-align: center; 
+    }
+    
+    .slideshow-container img {
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+    }
+}

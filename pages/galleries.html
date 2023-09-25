@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Galleries</title>
+    <link rel="stylesheet" href="../style/galleries_style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.jpg" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="projects.html">Research & Projects</a></li>
+                    <li><a href="methodology.html">Methodology Readings</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Galleries</h1>
+            </div>
+        </div>
+    </div>
+    <div class="page-descr">
+        I like to try out photography in my free time, and below I have divided a sample of photos
+        into the countries where they were taken. 
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="../images/photography/italy/italy_1.jpg">
+                    <div class="layer">
+                        <h3>Italy</h3>
+                        <p>Description</p>
+                        <a href="italy.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../images/photography/france/france_1.jpg">
+                    <div class="layer">
+                        <h3>France</h3>
+                        <p>Description</p>
+                        <a href="france.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../images/photography/usa/usa_1.jpg">
+                    <div class="layer">
+                        <h3>United States</h3>
+                        <p>Description</p>
+                        <a href="usa.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#">See More</a> -->
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+    
+    <script>
+    
+        var sidemenu = document.getElementById("sidemenu")
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+    </script>
+    
+    <script src="https://kit.fontawesome.com/6368e9bd85.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script>
+    
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false
+        },
+      loop: true,
+    
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
+    </script>
+
+</body>
+</html>
+

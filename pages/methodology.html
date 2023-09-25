@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Aaron Banks</title>
+    <link rel="stylesheet" href="../style/prj_mth_style.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.jpg" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="projects.html">Research & Projects</a></li>
+                    <li><a href="galleries.html">Galleries</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Methodology Readings</h1>
+            </div>
+        </div>
+    </div>
+    <div class="page-descr">
+        I borrow the concept of a <span>methodological</span> work from <a href="https://www.jstor.org/stable/48714515">Gilboa et al. (2022).</a>
+        Below is a list of works that I think are methodologically <span>interesting</span>. This latter classification is independent 
+        of what I might ultimately think about the works individually. I hope to be consistently updating this list.
+    </div>
+    <div class="works-container">
+        <h1>Articles</h1>
+            <ul>
+                <li class="title-article">
+                    <a href="https://assets.aeaweb.org/asset-server/journals/aer/top20/35.4.519-530.pdf">
+                        The Use of Knowledge in Society</a><span> by Friedrich Hayek</span></li>
+                 <li class="title-article"><a href="https://www.jstor.org/stable/1826045">
+                            The Utility Analysis of Choices Involving Risk</a><span> by Milton Friedman & Leonard J. Savage</span></li>
+                <li class="title-article"><a href="https://www.jstor.org/stable/1828886">
+                    A Difficulty in the Concept of Social Welfare</a><span> by Kenneth J. Arrow</span></li>
+                <li class="title-article"><a href="https://www.jstor.org/stable/2745982">
+                    Bandwagon and Underdog Effects and the Possibility of Election Predictions</a><span> by Herbert A. Simon</span></li>
+                <li class="title-article"><a href="https://www.jstor.org/stable/1827103">
+                    The Predictability of Social Events</a><span> by Emilie Grunberg & Franco Modigliani</span></li>
+                <li class="title-article"><a href="https://www.wiwiss.fu-berlin.de/fachbereich/bwl/pruefungs-steuerlehre/loeffler/Lehre/bachelor/investition/Friedman_the_methology_of_positive_economics.pdf">
+                            The Methodology of Positive Economics</a><span> by Milton Freidman</span></li>
+                <li class="title-article">
+                    <a href="https://www.jstor.org/stable/pdf/2298123.pdf">
+                        Identification of Endogenous Social Effects: The Reflection Problem</a><span> by Charles F. Manski</span></li>
+                <li class="title-article"><a href="https://www.jstor.org/stable/29783690">
+                    Falsifiability</a><span> by Wojciech Olzewski & Alvaro Sandroni </span></li>
+            </ul>
+    </div>
+    <div class="works-container">
+        <h1>Books</h1>
+            <ul>
+                <li class="title-book"> War and Peace<span> by Leo Tolstoy</span></li>
+                <li class="title-book"> Risk, Uncertainty and Profit<span> by Frank H. Knight</span></li>
+                <li class="title-book">Human Action (vol. 1)<span> by Ludwig Von Mises</span></li>
+                <li class="title-book">The Logic of Scientific Discovery<span> by Karl R. Popper</span></li>
+                <li class="title-book">Statistical Decision Functions<span> by Abraham Wald</span></li>
+                <li class="title-book">Statistical Decision Theory<span> by James O. Berger</span></li>
+                <li class="title-book">Identification for Prediction and Decision<span> by Charles F. Manski</span></li>
+                <li class="title-book">Theory of Decision Under Uncertainty<span> by Itzahk Gilboa</span></li>
+                <li class="title-book">Robustness<span> by Lars Peter Hansen and Thomas J. Sargent </span></li>
+
+            </ul>
+    </div>
+
+
+    <!-- scripts----- -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+    
+    <script>
+    
+        var sidemenu = document.getElementById("sidemenu")
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+    </script>
+    
+    <script src="https://kit.fontawesome.com/6368e9bd85.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>    
+
+</body>
+</html>

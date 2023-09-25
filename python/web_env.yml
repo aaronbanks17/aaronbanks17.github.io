@@ -1,0 +1,7 @@
+name: webpage
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pillow==8
+  - ipython

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Aaron Banks</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.jpg" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Research & Projects</a></li>
+                <li><a href="#intrigues">Intrigues</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Aaron Banks</h1>
+        </div>
+    </div>
+    <div id="home">
+        <div class="slideshow-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/slideshow/cdf_10.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slideshow/cdf_1.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slideshow/cdf_4.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slideshow/cdf_8.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slideshow/cdf_3.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slideshow/cdf_5.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slideshow/cdf_7.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-caption"><p>While you are here, please enjoy some Caspar David Friedrich</p></div>
+</div>
+    
+<!-- ----- about ------ -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.pdf">
+                <div class="externals">
+                    <ul class="contact-links">
+                        <li>
+                            <a href="mailto:atbanks@mit.edu">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/abanks17">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scholar.google.com/citations?hl=en&user=vHkUEL0AAAAJ">
+                                <i class="ai ai-google-scholar-square ai-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About</h1>
+                <p><br>I am a Predoc at MIT Sloan focusing on industrial organisation projects under Professors Mert Demirer and Ben Vatter. I consider my interests wide,
+                    but they often stem from questions in social scientific methodology and econometric theory.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>Northwestern Unviersity</span><br>
+                            <span class="tab-subitem">B.A. Economics (with honors);<br>Minor: Math</span></li>
+                        <li><span>Oakton Community College</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023-Present</span><br>MIT Sloan<br>
+                            <span class="tab-subitem">Predoc</span></li>
+                        <li><span>2022</span><br>CME Group Inc.<br>
+                            <span class="tab-subitem">Quant Risk Management & Clearing Intern</span></li>
+                        <li><span>2022</span><br>Remote<br>
+                            <span class="tab-subitem">Research Assistant for Stephane Mechoulan/Yujung Hwang</span></li>
+                        <li><span>2021-2022</span><br>Remote<br>
+                            <span class="tab-subitem">Don Lavoie Fellow</span></li>
+                        <li><span>2020-2022</span><br>Northwestern University, Dept. of Economics<br>
+                            <span class="tab-subitem"> Research Assistant for Gaston Illanes/Vivek Bhattacharya</span></li>
+                        <li><span>2021</span><br>Baker Program for Undergrad Research<br>
+                            <span class="tab-subitem">Advised by Vivek Bhattacharya/Marciano Siniscalchi</span></li>
+                        <li><span>2019-2020</span><br>Sibel Health<br>
+                            <span class="tab-subitem">Manufacturing Technician</span></li>
+                        <li><span>2019-2020</span><br>Simpson-Querrey Institute for Bio-integrated Electronics<br>
+                            <span class="tab-subitem">Volunteer Intern under John A. Rogers<span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Skills">
+                    <ul>
+                        <li><span>Python</span><br>
+                            <span class="tab-subitem">Econometric Modelling/Estimation,<br>Data Processing/Visualization, Optimization,<br>Webscrapping</span></li>
+                        <li><span>Stata</span><br>
+                            <span class="tab-subitem">Data Processing/Visualization, Estimation</span></li>
+                        <li><span>LaTex</span><br>
+                            <span class="tab-subitem">Technical Writing, TikZ</span></li>
+                        <li><span>Microsoft Excel</span><br>
+                            <span class="tab-subitem">Data Processing/Visualization</li>
+                        <li><span>HTML, CSS, JS</span><br> 
+                            <span class="tab-subitem">This Website</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----- tabs ------ -->
+<div id="tabs">
+    <div class="container">
+        <div class="row">
+            <div class="tab-col-1">
+                <div class="tab-titles">
+                </div>
+            </div>
+            <div class="tab-col-2">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----- My Work ------ -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Research & Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/papers/demarcation.png">
+                <div class="layer">
+                    <h3>Demarcation</h3>
+                    <p>My senior thesis which discusses a criterion for classifying economic theories are testable</p>
+                    <a href="https://drive.google.com/file/d/1J-HLnurkB4ZEhGcBv_Lhzu1f6YTArejz/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/papers/slave_prices.png">
+                <div class="layer">
+                    <h3>What was the Price of Slaves in Ancient Rome?</h3>
+                    <p>An example of how regression analysis may be leverged when using archeological data</p>
+                    <a href="https://drive.google.com/file/d/1_rRIIkDGIBbMW2dig3_PMMtTGtlfrNfm/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/papers/other.png">
+                <div class="layer">
+                    <h3>All Projects</h3>
+                    <p>My current ideas and projects</p>
+                    <a href="pages/projects.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#">See More</a> -->
+    </div>
+</div>
+
+<!-- ----- Intrigues ------ -->
+
+<div id="intrigues">
+    <div class="container">
+        <h1 class="sub-title">Intrigues</h1>
+        <div class="intrigues-list">
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Methodology Readings</h2>
+                <p> A list of works that I find methodologically <span>interesting</span></p>
+                <a href="pages/methodology.html">View List</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-camera"></i>
+                <h2>Photography</h2>
+                <p></p>
+                <a href="pages/galleries.html">View Galleries</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script src="https://kit.fontawesome.com/6368e9bd85.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false
+    },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+</script>
+
+</body>
+</html>
