@@ -196,6 +196,31 @@ nav .fa-solid{
     }
 }
 
+/* ---- Working-paper list normalization + WIP one-liner styling ---- */
+
+/* WIP line: black authors, green italic title */
+.project-title-link.wip-line{
+  font-style: normal;
+  color: black;
+}
+
+.project-title-link.wip-line .wip-title{
+  color: #26712a;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.project-title-link.wip-line a.author-link{
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+  padding: 0; /* cancels your .project-title-link a padding */
+}
+
+.project-title-link.wip-line a.author-link:hover{
+  text-decoration: underline;
+}
+
 /* ----- css for large screens ------ */
 
 @media screen and (min-width: 1200px) {
