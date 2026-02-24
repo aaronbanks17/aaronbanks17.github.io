@@ -111,11 +111,21 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 25%;
 }
-.about-col-1 img{
+/* .about-col-1 img{
     width: 100%;
     border-radius: 15px;
     border: 4px solid #d4cab5;
+} */
+.about-col-1 img{
+    width: min(325px, 100%);
+    height: auto;
+    border-radius: 15px;
+    border: 6px solid #d4cab5;
+    display: block;
+    margin: 0 auto;
 }
+
+
 .about-col-2{
     flex-basis: 70%;
 }
