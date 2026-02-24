@@ -228,7 +228,8 @@ nav ul li a:hover::after{
 
 .tab-contents ul li .tab-subitem{
     color: #000;
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: 1.05rem;
     font-style: italic;
 }
 .tab-contents{
