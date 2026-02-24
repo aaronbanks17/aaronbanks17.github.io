@@ -60,7 +60,7 @@ nav ul li a:hover::after{
     font-style: italic;
 }
 .page-descr{
-    padding: 15px 7%;
+    padding: 15px 6%;
     color: black;
     font-size: 15;
     font-weight: 500;
@@ -70,6 +70,11 @@ nav ul li a:hover::after{
 }
 .page-descr a{
     color: black;
+}
+@media screen and (min-width: 1200px){
+  .page-descr{
+    max-width: 120ch;
+  }
 }
 .subtitle{
     font-size: 20px;
@@ -106,7 +111,7 @@ nav ul li a:hover::after{
     font-style: normal;
 }
 .working-paper{
-    padding: 20px 5%;
+    padding: 12px 5%;
 }
 .project-title-link{
     color: #26712a;
@@ -131,15 +136,27 @@ nav ul li a:hover::after{
     font-style: italic;
 }
 
+@media screen and (min-width: 1200px){
+  .project-title-link p.project-abstract{
+    display: block;
+    max-width: 110ch;
+    width: 100%;
+    padding-left: 1.25rem; 
+    padding-right: 0;        
+    margin-right: auto;      
+  }
+}
+.project-title-link p.project-abstract{
+    font-size: 0.9rem;
+    line-height: 1.35;
+}
+
 /* ----- css for small screens ------ */
 nav .fa-solid{
     display: none;
 }
 
 @media only screen and (max-width: 600px){
-    /*#header{
-        background-image: url(images/background.pdf);
-    }*/
     .header-text{
         margin-top: 100%;
         font-size: 16px;
