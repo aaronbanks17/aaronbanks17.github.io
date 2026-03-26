@@ -193,8 +193,52 @@ body.inner-page .header-text h1 {
   transform: translateY(-5px);
 }
 
+.cv-link {
+    margin-top: 22px;
+}
+
+.cv-link a {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid #2e7d32;
+    border-radius: 6px;
+    color: #2e7d32;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cv-link a:hover {
+    background: #2e7d32;
+    color: #d3c7ae;
+}
+
+/* .cv-link {
+  margin-top: 22px;
+}
+
+.cv-link a {
+  display: inline-block;
+  padding: 5px 15px;
+  background: #fff;
+  border: 2px solid var(--text-green);
+  border-radius: 6px;
+  color: var(--text-green);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 0.5s, color 0.5s, transform 0.5s;
+}
+
+.cv-link a:hover {
+  background: var(--text-green);
+  color: var(--panel);
+  transform: translateY(-3px);
+} */
+
 /* ---------- tabs ---------- */
-#tabs {
+/* #tabs {
   padding: 80px 0;
   color: var(--text-black);
 }
@@ -263,7 +307,7 @@ body.inner-page .header-text h1 {
   color: var(--text-black);
   font-size: 1.05rem;
   font-style: italic;
-}
+} */
 
 /* ---------- homepage cards ---------- */
 #intrigues {
