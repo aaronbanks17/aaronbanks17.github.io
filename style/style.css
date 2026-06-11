@@ -7,6 +7,7 @@
   --text-black: #000;
   --border-light: #d4cab5;
   --border-light-2: #d3c7ae;
+  --content-width: 1200px;
 }
 
 * {
@@ -78,7 +79,9 @@ nav ul li a:hover::after {
 
 .header-text {
   font-size: 20px;
-  margin-left: 5%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 body.home-page .header-text h1 {
@@ -194,24 +197,24 @@ body.inner-page .header-text h1 {
 }
 
 .cv-link {
-    margin-top: 22px;
+  margin-top: 22px;
 }
 
 .cv-link a {
-    display: inline-block;
-    padding: 5px 15px;
-    border: 2px solid #2e7d32;
-    border-radius: 6px;
-    color: #2e7d32;
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: 500;
-    transition: background 0.3s, color 0.3s;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid #2e7d32;
+  border-radius: 6px;
+  color: #2e7d32;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
 }
 
 .cv-link a:hover {
-    background: #2e7d32;
-    color: #d3c7ae;
+  background: #2e7d32;
+  color: #d3c7ae;
 }
 
 /* ---------- homepage cards ---------- */
@@ -345,7 +348,9 @@ body.inner-page .header-text h1 {
 
 /* ---------- inner pages ---------- */
 .page-descr {
-  padding: 15px 6%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 15px 40px;
   color: var(--text-black);
   font-size: 15px;
   font-weight: 500;
@@ -355,29 +360,28 @@ body.inner-page .header-text h1 {
   font-style: italic;
 }
 
-.page-descr a,
-.title-article a {
+.page-descr a {
   color: var(--text-black);
 }
 
 .subtitle {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 7px 40px;
   font-size: 20px;
   font-weight: 600;
-  padding: 7px 5%;
   font-style: italic;
 }
 
 .works-container {
-  padding: 20px 5%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 20px 40px;
 }
 
 .works-container h1 {
   font-style: italic;
   font-size: 20px;
-}
-
-.works-container span {
-  color: var(--text-green);
 }
 
 .title-article,
@@ -387,6 +391,29 @@ body.inner-page .header-text h1 {
   padding: 7px;
 }
 
+/* methodology + notes: black titles, green authors */
+.title-article {
+  color: var(--text-black);
+}
+
+.title-article a {
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+.title-article a:visited {
+  color: var(--text-black);
+}
+
+.title-article a:hover {
+  text-decoration: underline;
+}
+
+.title-article span {
+  color: var(--text-green);
+}
+
+/* books: black titles, green authors */
 .title-book {
   color: var(--text-black);
   font-style: italic;
@@ -397,20 +424,47 @@ body.inner-page .header-text h1 {
   font-style: normal;
 }
 
+/* ---------- research page ---------- */
 .working-paper {
-  padding: 12px 5%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 12px 40px;
 }
 
 .project-title-link {
-  color: var(--text-green);
+  color: var(--text-black);
   font-weight: 500;
   font-style: italic;
 }
 
-.project-title-link a {
+/* WIP line: black title, green authors */
+.project-title-link.wip-line {
   color: var(--text-green);
+  font-style: normal;
+}
+
+.project-title-link.wip-line .wip-title {
+  color: var(--text-black);
   font-style: italic;
   font-weight: 500;
+}
+
+.project-title-link.wip-line .wip-authors {
+  color: var(--text-green);
+  font-style: normal;
+}
+
+.project-title-link.wip-line a.author-link,
+.project-title-link.wip-line a.author-link:visited,
+.project-title-link.wip-line a.author-link:hover {
+  color: var(--text-green);
+  font-style: normal;
+  text-decoration: none;
+  padding: 0;
+}
+
+.project-title-link.wip-line a.author-link:hover {
+  text-decoration: underline;
 }
 
 .project-title-link p {
@@ -419,36 +473,9 @@ body.inner-page .header-text h1 {
   font-style: normal;
 }
 
-.project-title-link span {
-  font-style: italic;
-}
-
 .project-title-link p.project-abstract {
   font-size: 0.9rem;
   line-height: 1.35;
-}
-
-/* WIP line: black authors, green italic title */
-.project-title-link.wip-line {
-  font-style: normal;
-  color: var(--text-black);
-}
-
-.project-title-link.wip-line .wip-title {
-  color: var(--text-green);
-  font-style: italic;
-  font-weight: 500;
-}
-
-.project-title-link.wip-line a.author-link {
-  color: var(--text-black);
-  font-style: normal;
-  text-decoration: none;
-  padding: 0;
-}
-
-.project-title-link.wip-line a.author-link:hover {
-  text-decoration: underline;
 }
 
 /* ---------- responsiveness ---------- */
@@ -460,6 +487,7 @@ nav .fa-solid {
   .header-text {
     margin-top: 100%;
     font-size: 16px;
+    padding: 0 24px;
   }
 
   .header-text h1,
@@ -495,6 +523,14 @@ nav .fa-solid {
     top: 25px;
     left: 25px;
     cursor: pointer;
+  }
+
+  .page-descr,
+  .subtitle,
+  .works-container,
+  .working-paper {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .sub-title {
@@ -546,10 +582,6 @@ nav .fa-solid {
     max-width: 70ch;
     margin-right: auto;
     font-size: 1.05rem;
-  }
-
-  .page-descr {
-    max-width: 120ch;
   }
 
   .project-title-link p.project-abstract {
